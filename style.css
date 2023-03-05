@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url("./img/bgDay.074ef37336b466c36b93.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  background-attachment: fixed;
+  position: fixed;
+  z-index: 101;
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-menu {
+  width: 100%;
+  height: 12rem;
+}
+
+.position {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.guest {
+  color: #808080;
+}
+
+.hotelMeneger {
+  display: none;
+  font-size: 1.4rem;
+  color: #ff0000;
+}
+
+.admin {
+  display: none;
+}
+
+.dropdown-menu ul {
+  direction: none;
+}
+
+header nav .collapse {
+  justify-content: flex-end;
+}
+
+header nav .container-fluid {
+  background-color: #ffffff;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  row-gap: 20px;
+}
+
+main .card {
+  display: flex;
+  justify-content: center;
+}
+
+main .register {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+  color: #000000;
+  margin-top: 100px;
+}
+
+main .register .top h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+main .register .bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main .card {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: 0px;
+  gap: 20px;
+  margin-top: 80px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 800px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-front img {
+  width: 800px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.flip-card-back {
+  background-color: #2fadd9;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back .title {
+  border-bottom: 1px solid black;
+  color: #ffffff;
+}
+.flip-card-back .text {
+  width: 100%;
+  height: 35%;
+  border-bottom: 1px solid black;
+  padding: 5px 30px 5px 30px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.flip-card-back .text p {
+  max-height: 130px;
+  overflow-y: scroll;
+}
+.flip-card-back .contact {
+  width: 40%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+.flip-card-back .contact p {
+  margin-bottom: 7px;
+}
+.flip-card-back .contact p i {
+  color: #1d1d1d;
+  padding: 0px 5px;
+}
+.flip-card-back .contact .Edit {
+  width: 395%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.flip-card-back .contact .Edit i {
+  color: #1d1d1d;
+  padding: 0px 5px;
+}
+main .inputbox .inputtwo {
+  max-height: 100px;
+}
+
+.log-out {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #b1eafd;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #b1eafd;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+#progress {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  box-shadow: 0px 0px 10px #00000033;
+  display: grid;
+  place-items: center;
+  z-index: 105;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 5px);
+  width: calc(100% - 5px);
+  background-color: #1c1f25;
+  border-radius: 50%;
+  display: flex;
+  place-items: center;
+  font-weight: 600;
+  font-size: 0px;
+}
+
+main .left .cardright {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+}
+
+.inputbox {
+  gap: 5px;
+}
+
+.btn {
+  border: none;
+}
+
+.user-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#photo {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#file {
+  display: none;
+}
+
+#uploadebtn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding: 6px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #ffffff;
+  transform: translateX(100%);
+  margin-top: 60px;
+  background-color: #adacaccc;
+  box-shadow: 2px 4px 4px #000000a4;
+}
+
+.inputbox {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 62px 10px 0px 14px;
+  margin-top: 30px;
+}
+
+.upload-your-hotel .inputbox .inputone {
+  box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
+}
+
+.upload-your-hotel .inputbox .inputtwo {
+  box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
+}
+
+.upload-your-hotel .inputbox .inputthree {
+  box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
+}
+
+.upload-your-hotel .inputbox .inputfour {
+  box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
+}
+
+.upload-your-hotel .inputbox .inputfive {
+  box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
+}
+
+.upload-your-hotel input .btn {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main .inputbox button {
+  width: 50%;
+  height: 100%;
+  box-shadow: 3px 1px 20px 10px rgba(255, 255, 255, 0.4);
+  border: 0px;
+}
+
+.card-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: #afeafd;
+  padding-right: 40px;
+  color: #1d1d1d;
+}
+.input-search::placeholder {
+  color: #afeafd80;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  color: #1d1d1d;
+}
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #182f3f;
+  background-color: transparent;
+  pointer-events: painted;
+}
+.btn-search:hover ~ .input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #afeafd80;
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+.input-search:hover {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #afeafd80;
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
