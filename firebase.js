@@ -1,13 +1,14 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDcaK4eNPnV-dLGO1gOq76C0A_clg1ie4M",
-  authDomain: "travelmore-e65d4.firebaseapp.com",
-  databaseURL: "https://travelmore-e65d4-default-rtdb.firebaseio.com",
-  projectId: "travelmore-e65d4",
-  storageBucket: "travelmore-e65d4.appspot.com",
-  messagingSenderId: "713002452960",
-  appId: "1:713002452960:web:333c7a77944bc5253d4d85",
-  measurementId: "G-F4LKV57Y58",
+  apiKey: "AIzaSyDPKoD9V-f8PBnJBgt1shDnBbwg7wU_Mgc",
+  authDomain: "travel-more-befb8.firebaseapp.com",
+  databaseURL: "https://travel-more-befb8-default-rtdb.firebaseio.com",
+  projectId: "travel-more-befb8",
+  storageBucket: "travel-more-befb8.appspot.com",
+  messagingSenderId: "846086815128",
+  appId: "1:846086815128:web:9df4996094d68637f3ffed",
+  measurementId: "G-P5YZN4R58V"
 };
+
 
 firebase.initializeApp(firebaseConfig);
 
